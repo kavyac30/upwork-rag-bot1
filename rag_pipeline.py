@@ -8,8 +8,8 @@ from langchain_community.vectorstores import Chroma
 
 load_dotenv()
 
-API_KEY = st.secrets["DEEPINFRA_API_KEY"]
-MODEL_NAME = st.secrets["MODEL_NAME"]
+API_KEY = st.secrets.get("DEEPINFRA_API_KEY", os.getenv("DEEPINFRA_API_KEY"))
+MODEL_NAME = st.secrets.get("MODEL_NAME", os.getenv("MODEL_NAME"))
 
 CHROMA_PATH = "chroma_db"
 
