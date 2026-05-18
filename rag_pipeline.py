@@ -2,14 +2,14 @@ import os
 import time
 import requests
 from dotenv import load_dotenv
-
+import streamlit as st
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 
 load_dotenv()
 
-API_KEY = os.getenv("DEEPINFRA_API_KEY")
-MODEL_NAME = os.getenv("MODEL_NAME")
+API_KEY = st.secrets("DEEPINFRA_API_KEY")
+MODEL_NAME = st.secrets("MODEL_NAME")
 
 CHROMA_PATH = "chroma_db"
 
