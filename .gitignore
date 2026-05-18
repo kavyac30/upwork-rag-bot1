@@ -1,0 +1,14 @@
+# venv/
+# __pycache__/
+# .env
+# chroma_db/
+
+venv/
+__pycache__/
+.env
+*.pyc
+*.dll
+*.pyd
+*.so
+*.log
+chroma_db/

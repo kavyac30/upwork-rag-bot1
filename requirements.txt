@@ -1,0 +1,13 @@
+streamlit
+langchain
+langchain-community
+langchain-core
+langchain-huggingface
+chromadb
+sentence-transformers
+pypdf
+python-dotenv
+requests
+tiktoken
+langchain-text-splitters
+PDFPlumber
